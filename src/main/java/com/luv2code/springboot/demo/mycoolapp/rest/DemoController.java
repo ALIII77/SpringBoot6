@@ -19,14 +19,12 @@ public class DemoController {
 //    }
 
     @Autowired
-    public void setCoach(@Qualifier("baseballCoach") Coach coach){
+    public void setCoach(@Qualifier("trackCoach") Coach coach){
         this.coach = coach;
     }
 
     @GetMapping(path = "/getDailyWorkout")
     public String getDailyWorkout() {
-        System.out.println("alimoradi");
-        System.out.println("alimoradi");
         return coach.getDailyWorkout();
     }
 

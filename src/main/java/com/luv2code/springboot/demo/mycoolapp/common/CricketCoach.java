@@ -9,8 +9,15 @@ import org.springframework.stereotype.Component;
 @Qualifier(value = "cricketCoach")
 public class CricketCoach implements Coach {
 
+
+    public CricketCoach(){
+        System.out.println("In Constructor " + getClass().getSimpleName());
+    }
+
     @Override
     public String getDailyWorkout() {
         return "implement dailyWorkout in CricketCoach class:-)";
      }
+
+
 }
