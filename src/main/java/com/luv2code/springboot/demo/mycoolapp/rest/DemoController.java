@@ -26,6 +26,7 @@ public class DemoController {
     @GetMapping(path = "/getDailyWorkout")
     public String getDailyWorkout() {
         System.out.println("alimoradi");
+        System.out.println("alimoradi");
         return coach.getDailyWorkout();
     }
 
